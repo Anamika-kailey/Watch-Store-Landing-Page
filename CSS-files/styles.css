@@ -17,7 +17,7 @@ img {
 .main__container {
   background: var(--color-primary);
   border-radius: 0px 0px 40px 40px;
-  padding: 4rem;
+  padding: 5rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,7 +159,7 @@ a {
 
 .search-bar.active .search-input {
   opacity: 1;
-  width: 200px;
+  width: 100px;
 }
 
 ::placeholder {
@@ -173,16 +173,7 @@ a {
 .search-input {
   margin-right: 1rem;
 }
-/*
-.icon-container-aside {
-  display: flex;
-  align-items: center;
-}
 
-.search-bar.active {
-  display: flex;
-  align-items: center;
-} */
 
 @media screen and (min-width: 1024px) {
   input {
@@ -200,6 +191,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .content {
+    max-width: 700px;
+    padding: 5rem 10rem;
+  }
+
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -235,6 +231,7 @@ a {
   .image {
     display: flex;
     width: 90%;
+    align-self: center;
   }
 
   .radio__container {
