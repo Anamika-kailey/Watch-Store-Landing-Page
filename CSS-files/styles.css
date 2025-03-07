@@ -195,10 +195,6 @@ a {
   display: grid;
 }
 
-.main__content,
-image {
-  padding: 2rem;
-}
 .content {
   justify-content: center;
 }
@@ -305,6 +301,7 @@ image {
 /* Watch Container */
 .watch-types {
   display: flex;
+  flex-direction: column;
   justify-self: center;
 }
 
@@ -335,6 +332,12 @@ image {
 
 .watch__pink {
   background-color: rgba(252, 177, 199, 0.4);
+}
+
+@media screen and (min-width: 500px) {
+  .watch-types {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 768px) {
