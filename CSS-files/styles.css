@@ -224,8 +224,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .header{
+    padding: 0 5rem;
+  }
+  
   .list {
     display: flex;
+    width: 60%;
   }
 
   .image {
@@ -462,10 +467,13 @@ footer {
     min-height: 100vh;
     justify-self: end;
     border-radius: 40px 0px 0px 40px;
+    padding: 2rem 1rem;
   }
 
   .side__menu-bar {
     display: flex;
+    padding-top: 5rem;
+    padding-left: 1rem;
   }
 
 }
