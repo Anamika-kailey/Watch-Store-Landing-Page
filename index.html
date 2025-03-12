@@ -14,22 +14,16 @@
     />
   </head>
   <body>
-    <span class="footer__icon-container side__menu-bar">
-      <svg class="icon icon--secondary">
-        <use xlink:href="./images/sprite.svg#menu-alt-2-svgrepo-com"></use>
-      </svg>
-      <span class="footer__aside">
-        <svg class="icon icon--secondary">
-          <use xlink:href="./images/sprite.svg#facebook-svgrepo-com"></use>
-        </svg>
-        <svg class="icon icon--secondary">
-          <use xlink:href="./images/sprite.svg#twitter-154-svgrepo-com"></use>
-        </svg>
-        <svg class="icon icon--secondary">
-          <use xlink:href="./images/sprite.svg#instagram-svgrepo-com"></use>
-        </svg>
-      </span>
-    </span>
+    <div class="side-bar__container side__menu-bar">
+      <div class="side-bar">
+        <img class="menu-icon" src="./images/Nav-Menu.png" alt="" />
+        <div class="footer__aside">
+          <img class="social-icon" src="./images/facebook.png" alt="" />
+          <img class="social-icon" src="./images/twitter.png" alt="" />
+          <img class="social-icon" src="./images/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
     <div class="menu">
       <ul class="list">
         <li class="list__item side__item">
@@ -72,12 +66,8 @@
               ></use>
             </svg>
           </span>
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#line-l-svgrepo-com"></use>
-          </svg>
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#store-sign-svgrepo-com"></use>
-          </svg>
+          <img class="side-icon" src="./images/line.png" alt="">
+          <img class="side-icon" src="./images/shopping-bag.png" alt="">
         </span>
       </header>
       <section class="grid grid--1x2">
@@ -90,7 +80,7 @@
           </div>
         </div>
         <div class="image">
-          <img src="./images/watch.png" alt="watch" />
+          <img class="watch__img" src="./images/watch.png" alt="watch" />
           <div class="radio__container">
             <div class="box box-1"></div>
             <div class="box box-2"></div>
@@ -103,35 +93,30 @@
         <p>1</p>
         <div class="grid watch-types grid--1x3">
           <div class="watch__container watch__black">
-            <img src="./images/black-watch.png" alt="" />
+            <img class="watch__img" src="./images/black-watch.png" alt="" />
           </div>
           <div class="watch__container watch__green">
-            <img src="./images/green-watch.png" alt="" />
+            <img class="watch__img" src="./images/green-watch.png" alt="" />
           </div>
           <div class="watch__container watch__pink">
-            <img src="./images/pink-watch.png" alt="" />
+            <img class="watch__img" src="./images/pink-watch.png" alt="" />
           </div>
         </div>
       </div>
     </div>
     <footer>
-      <span class="footer__icon-container">
-        <svg class="menu-icon icon--secondary">
-          <use xlink:href="./images/sprite.svg#menu-alt-2-svgrepo-com"></use>
-        </svg>
-        <span class="footer__aside">
-          <svg class="icon icon--secondary">
-            <use xlink:href="./images/sprite.svg#facebook-svgrepo-com"></use>
-          </svg>
-          <svg class="icon icon--secondary">
-            <use xlink:href="./images/sprite.svg#twitter-154-svgrepo-com"></use>
-          </svg>
-          <svg class="icon icon--secondary">
-            <use xlink:href="./images/sprite.svg#instagram-svgrepo-com"></use>
-          </svg>
-        </span>
-      </span>
+      <div class="side-bar__container">
+        <div class="side-bar">
+          <img class="menu-icon menu-icon-dynamic" src="./images/Nav-Menu.png" alt="" />
+          <div class="footer__aside">
+            <img class="social-icon" src="./images/facebook.png" alt="" />
+            <img class="social-icon" src="./images/twitter.png" alt="" />
+            <img class="social-icon" src="./images/linkedin.png" alt="" />
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./Js/main.js"></script>
   </body>
 </html>
+

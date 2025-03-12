@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-img {
+.watch__img {
   width: 100%;
 }
 
@@ -22,7 +22,7 @@ img {
 
 
 @media screen and (min-width: 768px) {
-  img {
+  .watch__img {
     max-width: 700px;
     height: fit-content;
   }
@@ -172,12 +172,18 @@ a:hover {
   width: 0;
   height: 40px;
   opacity: 0;
+  position: relative;
+  left: 40px;
 }
 
 .icon-container-aside {
   margin-top: 1rem;
   display: flex;
   align-items: center;
+}
+
+.side-icon {
+  margin-left: 2rem;
 }
 
 .search-bar {
@@ -196,6 +202,7 @@ a:hover {
 
 .search-icon {
   cursor: pointer;
+  z-index: 1;
 }
 
 .search-input {
@@ -205,7 +212,7 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   .search-bar.active .search-input {
-    width: 300px;
+    width: 250px;
   }
 }
 
@@ -330,19 +337,6 @@ a:hover {
     justify-self: auto;
   }
 }
-/* .content > p {
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-} 
-
-.content p::after {
-  content: " >";
-}
-
-.content p::before {
-  content: "< ";
-}*/
 
 /* Block */
 .block {
@@ -425,18 +419,6 @@ footer {
   margin: 2rem;
 }
 
-.footer__icon-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__aside {
-  display: flex;
-}
-
-.footer__aside > .icon {
-  margin-left: 2rem;
-}
 
 .menu > .list {
   flex-direction: column;
@@ -450,22 +432,45 @@ footer {
   color: var(--color-primary);
 }
 
+
+.side-bar__container {
+  width: 100%;
+}
+.social-icon,
+.menu-icon {
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+.side-bar {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (min-width: 768px) {
-  .footer__icon-container {
+
+  .side-bar__container {
+    width: 40px;
     height: 100vh;
-    flex-direction: column;
+    display: flex;
     justify-content: space-between;
     position: absolute;
-    padding: 5rem 1rem; 
   }
-  
-  .footer__aside {
+  .social-icon,
+  .menu-icon {
+    width: fit-content;
+  }
+  .side-bar {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    
   }
 
-  .footer__aside > .icon {
-    margin-top: 2rem;
-    margin-left: 0;
+  .footer__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    padding-bottom: 2rem;
   }
  
 }
@@ -530,14 +535,13 @@ footer {
 
   .side__menu-bar {
     display: flex;
-    padding-top: 5rem;
-    padding-left: 1rem;
+    padding-top: 4rem;
   }
 
 }
 
 @media screen and (min-width:1024px) {
   .side__menu-bar {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 }
