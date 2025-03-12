@@ -309,11 +309,32 @@ a:hover {
 }
 
 /* Page no. */
-.content > p {
+.block > p {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 3rem;
+  display: block;
+  justify-self: center;
 }
+
+.block p::after {
+  content: " >";
+}
+
+.block p::before {
+  content: "< ";
+}
+
+@media screen and (min-width:768px) {
+  .block> p {
+    justify-self: auto;
+  }
+}
+/* .content > p {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+} 
 
 .content p::after {
   content: " >";
@@ -321,11 +342,11 @@ a:hover {
 
 .content p::before {
   content: "< ";
-}
+}*/
 
 /* Block */
 .block {
-  margin-top: 5rem;
+  padding-left: 5rem;
 }
 
 /* Watch Container */
@@ -377,6 +398,8 @@ a:hover {
 
   .block {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .watch-types {
@@ -387,6 +410,12 @@ a:hover {
 @media screen and (min-width: 1024px) {
   .block {
     margin-right: 10%;
+  }
+  .header{
+    padding: 0 10rem;
+  }
+  .grid--1x2 {
+    margin: 8rem;
   }
 }
 
