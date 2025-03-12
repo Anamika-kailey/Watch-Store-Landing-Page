@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS-files/normalize.css" >
-    <link rel="stylesheet" href="./CSS-files/styles.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="stylesheet" href="./CSS-files/normalize.css" />
+    <link rel="stylesheet" href="./CSS-files/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    >
+    />
   </head>
   <body>
     <span class="footer__icon-container side__menu-bar">
-      <svg class="icon">
+      <svg class="icon icon--secondary">
         <use xlink:href="./images/sprite.svg#menu-alt-2-svgrepo-com"></use>
       </svg>
       <span class="footer__aside">
-        <svg class="icon">
+        <svg class="icon icon--secondary">
           <use xlink:href="./images/sprite.svg#facebook-svgrepo-com"></use>
         </svg>
-        <svg class="icon">
+        <svg class="icon icon--secondary">
           <use xlink:href="./images/sprite.svg#twitter-154-svgrepo-com"></use>
         </svg>
-        <svg class="icon">
+        <svg class="icon icon--secondary">
           <use xlink:href="./images/sprite.svg#instagram-svgrepo-com"></use>
         </svg>
       </span>
     </span>
+    <div class="menu">
+      <ul class="list">
+        <li class="list__item side__item">
+          <a class="side__link" href="#">Mac</a>
+        </li>
+        <li class="list__item side__item">
+          <a class="side__link" href="#">iphone</a>
+        </li>
+        <li class="list__item side__item menu__badge">
+          <a class="side__link" href="#">ipad</a>
+        </li>
+        <li class="list__item side__item">
+          <a class="side__link" href="#">iwatch</a>
+        </li>
+        <li class="list__item side__item">
+          <a class="side__link" href="#">Support</a>
+        </li>
+      </ul>
+    </div>
     <div class="main__container">
-      <div class="menu">
-        <ul class="list">
-          <li class="list__item side__item">
-            <a class="side__link" href="#">Mac</a>
-          </li>
-          <li class="list__item side__item">
-            <a class="side__link" href="#">iphone</a>
-          </li>
-          <li class="list__item side__item menu__badge">
-            <a class="side__link" href="#">ipad</a>
-          </li>
-          <li class="list__item side__item">
-            <a class="side__link" href="#">iwatch</a>
-          </li>
-          <li class="list__item side__item">
-            <a class="side__link" href="#">Support</a>
-          </li>
-        </ul>
-      </div>
       <header class="header">
         <span class="icon-container">
           <svg class="icon">
@@ -60,12 +60,12 @@
           <li class="list__item"><a href="#">Mac</a></li>
           <li class="list__item"><a href="#">iphone</a></li>
           <li class="list__item"><a href="#">ipad</a></li>
-          <li class="list__item"><a href="#">iwatch</a></li>
+          <li class="list__item badge"><a href="#">iwatch</a></li>
           <li class="list__item"><a href="#">Support</a></li>
         </ul>
         <span class="icon-container-aside">
           <span class="search-bar">
-            <input type="text" placeholder="Search here" class="search-input" >
+            <input type="text" placeholder="Search here" class="search-input" />
             <svg class="icon search-icon">
               <use
                 xlink:href="./images/sprite.svg#search-alt-svgrepo-com"
@@ -85,12 +85,13 @@
           <div class="content">
             <h1>The Perfect Moment</h1>
             <h2>Between Past And Future.</h2>
+            <br />
             <button class="btn">Buy Now</button>
             <p>1</p>
           </div>
         </div>
         <div class="image">
-          <img src="./images/watch.png" alt="watch" >
+          <img src="./images/watch.png" alt="watch" />
           <div class="radio__container">
             <div class="box box-1"></div>
             <div class="box box-2"></div>
@@ -102,30 +103,30 @@
       <div class="block">
         <div class="grid watch-types grid--1x3">
           <div class="watch__container watch__black">
-            <img src="./images/black-watch.png" alt="" >
+            <img src="./images/black-watch.png" alt="" />
           </div>
           <div class="watch__container watch__green">
-            <img src="./images/green-watch.png" alt="" >
+            <img src="./images/green-watch.png" alt="" />
           </div>
           <div class="watch__container watch__pink">
-            <img src="./images/pink-watch.png" alt="" >
+            <img src="./images/pink-watch.png" alt="" />
           </div>
         </div>
       </div>
     </div>
     <footer>
       <span class="footer__icon-container">
-        <svg class="icon menu-icon">
+        <svg class="menu-icon icon--secondary">
           <use xlink:href="./images/sprite.svg#menu-alt-2-svgrepo-com"></use>
         </svg>
         <span class="footer__aside">
-          <svg class="icon">
+          <svg class="icon icon--secondary">
             <use xlink:href="./images/sprite.svg#facebook-svgrepo-com"></use>
           </svg>
-          <svg class="icon">
+          <svg class="icon icon--secondary">
             <use xlink:href="./images/sprite.svg#twitter-154-svgrepo-com"></use>
           </svg>
-          <svg class="icon">
+          <svg class="icon icon--secondary">
             <use xlink:href="./images/sprite.svg#instagram-svgrepo-com"></use>
           </svg>
         </span>
